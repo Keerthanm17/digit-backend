@@ -11,9 +11,9 @@ from flask_cors import CORS
 
 app = Flask(__name__)
 CORS(app)
-# Load the trained model
+# Load the trained model.
 try:
-    model = load_model("../model/mnist_model_best.h5")
+    model = load_model("model/mnist_model_best.h5")
     print("Model loaded successfully.")
 except:
     print("Warning: Could not load model. Make sure mnist_model.h5 is in the same directory.")
